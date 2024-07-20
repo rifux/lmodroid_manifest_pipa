@@ -39,7 +39,7 @@ cd ../LMODroid-pipa-deps
 And then download it
 
 ```bash
-prepare-pipa-deps.sh
+./prepare-pipa-deps.sh
 ```
 
 Let's prepare our devices list:
