@@ -1,11 +1,15 @@
-LMODroid
+LMODroid feat. rifux
 ===========
 
 Getting started
 ---------------
 
+### Make sure you have 320 GB free space and 64 GiB RAM + linux_swap (for example, 16 GiB RAM and 50 GiB linux_swap)
+
 To get started with Android/LMODroid, you'll need to get
 familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
+
+## 1. Fetching LMODroid sources
 
 Create a directory for the source files
 This can be located anywhere (as long as the fs is case-sensitive)
@@ -26,7 +30,7 @@ Then to sync up:
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-Fetch Xiaomi Pad 6 dependencies
+## 2. Fetching Xiaomi Pad 6 dependencies
 
 ```bash
 mkdir -pv ../LMODroid-pipa-deps && \
@@ -42,16 +46,16 @@ And then download it
 ./prepare-pipa-deps.sh
 ```
 
-Let's prepare our devices list:
+## 3. Building
 
-Firstly, run
+> Let's prepare our devices list
+
+Firstly, run it to enter LMODroid dir and bash terminal shell [__*it's necessary!*__]
 
 ```bash
 cd ../LMODroid && \
 bash
 ```
-
-^ To enter bash terminal shell [__*it's necessary!*__] ^
 
 Now setup environment using
 
