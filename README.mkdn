@@ -31,6 +31,12 @@ Then to sync up:
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
+Now you need to apply fix to get your recovery working properly:
+
+```bash
+repopick -f -g https://gerrit.aospa.co 37291 -P bootable/recovery
+```
+
 ## 2. Fetching Xiaomi Pad 6 dependencies
 
 This command will create directory outside and fetch download script into it. We will use this script to fetch device dependencies.
