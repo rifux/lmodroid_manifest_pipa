@@ -31,7 +31,7 @@ Fetch Xiaomi Pad 6 dependencies
 ```bash
 mkdir -pv ../LMODroid-pipa-deps && \
 wget --output-document ../LMODroid-pipa-deps/prepare-pipa-deps.sh \
-    https://raw.githubusercontent.com/rifux/LMODroid_manifest_pipa/lindroid-14.0/device/pipa-prepare.sh && \
+    https://raw.githubusercontent.com/rifux/lmodroid_manifest_pipa/fourteen/device/pipa-prepare.sh && \
 chmod +x ../LMODroid-pipa-deps/prepare-pipa-deps.sh && \
 cd ../LMODroid-pipa-deps
 ```
