@@ -7,11 +7,58 @@ Getting started
 To get started with Android/LMODroid, you'll need to get
 familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
 
-To initialize your local repository using the LMODroid trees, use a command like this:
+Create a directory for the source files
+This can be located anywhere (as long as the fs is case-sensitive)
+
+```bash
+mkdir LMODroid && \
+cd LMODroid
 ```
+
+To initialize your local repository using the LMODroid trees, use a command like this:
+
+```bash
 repo init -u https://git.libremobileos.com/LMODroid/manifest.git -b fourteen --git-lfs
 ```
 Then to sync up:
-```
+
+```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+
+Fetch Xiaomi Pad 6 dependencies
+
+```bash
+mkdir -pv ../LMODroid-pipa-deps && \
+wget --output-document ../LMODroid-pipa-deps/prepare-pipa-deps.sh \
+    https://raw.githubusercontent.com/rifux/LMODroid_manifest_pipa/lindroid-14.0/device/pipa-prepare.sh && \
+chmod +x ../LMODroid-pipa-deps/prepare-pipa-deps.sh && \
+cd ../LMODroid-pipa-deps
+```
+
+And then download it
+
+```bash
+prepare-pipa-deps.sh
+```
+
+Let's prepare our devices list:
+
+Firstly, run
+
+```bash
+cd ../LMODroid && \
+bash
+```
+
+^ To enter bash terminal shell [__*it's necessary!*__] ^
+
+```bash
+. build/envsetup.sh
+```
+
+__*To start building enter*__
+
+```bash
+brunch pipa
 ```
