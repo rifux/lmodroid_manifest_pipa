@@ -8,7 +8,7 @@ git clone https://github.com/ai94iq/proprietary_vendor_xiaomi_sm8250-common -b l
 git clone https://github.com/ai94iq/proprietary_vendor_xiaomi_pipa -b lmou ../LMODroid/vendor/xiaomi/pipa
 
 # Device
-git clone https://github.com/pachdomenic/android_device_xiaomi_pipa -b lineage-21 ../LMODroid/device/xiaomi/pipa
+git clone https://github.com/rifux/android_device_xiaomi_pipa -b lmodroid-14.0 ../LMODroid/device/xiaomi/pipa
 git clone https://github.com/rifux/android_device_xiaomi_sm8250-common -b lmodroid-14.0 ../LMODroid/device/xiaomi/sm8250-common
 
 # Kernel
