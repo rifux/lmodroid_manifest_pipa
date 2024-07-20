@@ -53,6 +53,8 @@ bash
 
 ^ To enter bash terminal shell [__*it's necessary!*__] ^
 
+Now setup environment using
+
 ```bash
 . build/envsetup.sh
 ```
